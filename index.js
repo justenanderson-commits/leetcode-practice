@@ -1,26 +1,33 @@
-// Remove duplicates
-let nums1 = [1,1,2]
-let nums2 = [0,0,1,1,1,2,2,3,3,4]
-// Expected output = [0,1,2,3,4}
+// Index of first occurence
 
-var removeDuplicates = function(nums) {
-  // Given an array in non-descending order, remove the duplicate elements in-place
-  // Iterate over the nums array
-    // If the element at index i is the same as the element at index i-1, then slice out the element at index i and decrement the value of i. 
-  // Continue iterating. Increment i. Repeat. 
-  // Returns nums/length because that's what Leetcode wants.
-  
-  for(let i = 0; i < nums.length; i++){
-    console.log('I: ', i)
-    if(nums[i]===nums[i+1]){
-      nums.splice(i+1, 1)
-      i--
-    }
-    // console.log('Nums: ', nums)
-  }
-  
-  return nums.length
+
+var strStr = function(haystack, needle) {
+    
 };
+
+// // Remove duplicates
+// let nums1 = [1,1,2]
+// let nums2 = [0,0,1,1,1,2,2,3,3,4]
+// // Expected output = [0,1,2,3,4}
+
+// var removeDuplicates = function(nums) {
+//   // Given an array in non-descending order, remove the duplicate elements in-place
+//   // Iterate over the nums array
+//     // If the element at index i is the same as the element at index i-1, then slice out the element at index i and decrement the value of i. 
+//   // Continue iterating. Increment i. Repeat. 
+//   // Returns nums/length because that's what Leetcode wants.
+  
+//   for(let i = 0; i < nums.length; i++){
+//     console.log('I: ', i)
+//     if(nums[i]===nums[i+1]){
+//       nums.splice(i+1, 1)
+//       i--
+//     }
+//     // console.log('Nums: ', nums)
+//   }
+  
+//   return nums.length
+// };
 
 // Runtime
 // 768 ms
