@@ -1,17 +1,21 @@
+
+
 // Index of first occurence
-let haystack1 = "sadbutsad"
-let needle1 = "sad"
+// let haystack1 = "sadbutsad"
+// let needle1 = "sad"
 
-var strStr = function(haystack, needle) {
-  let index = haystack.indexOf(needle) 
-  if(haystack.includes(needle)) {
-   return index
-  } else {
-   return -1
-  }
-};
+// var strStr = function(haystack, needle) {
+//   let index = haystack.indexOf(needle) 
+//   if(haystack.includes(needle)) {
+//    return index
+//   } else {
+//    return -1
+//   }
+// };
 
-strStr(haystack1, needle1)
+// strStr(haystack1, needle1)
+
+// run time 62 ms
 
 // // Remove duplicates
 // let nums1 = [1,1,2]
