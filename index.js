@@ -1,3 +1,12 @@
+// Length of Last Word
+
+var lengthOfLastWord = function(s) {
+    
+};
+
+
+
+
 // Search Insert Position
 
 // Input: nums = [1,3,5,6], target = 5
