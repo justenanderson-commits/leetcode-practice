@@ -1,11 +1,39 @@
+// Search Insert Position
 
+// Input: nums = [1,3,5,6], target = 5
+// Output: 2
+
+// Example 2:
+
+// Input: nums = [1,3,5,6], target = 2
+// // Output: 1
+// var searchInsert = function (nums, target) {
+//   // Iterate over an array of numbers, finding the target value.
+
+//   // Use a for loop, return i when found.
+//   // If not found, return the index where it would be if it were inserted in order.
+//   // Must keep track of index vs element value in order to complete the line above.
+//   if (nums[nums.length - 1] >= target) {
+//     for (let i = 0; i < nums.length; i++) {
+//       console.log('I :', i)
+//       if (nums[i] === target || nums[i] > target) {
+//         return i
+//       }
+//     }
+//   } else {
+//     return nums.length
+//   }
+// }
+
+// Runtime
+// 102 ms
 
 // Index of first occurence
 // let haystack1 = "sadbutsad"
 // let needle1 = "sad"
 
 // var strStr = function(haystack, needle) {
-//   let index = haystack.indexOf(needle) 
+//   let index = haystack.indexOf(needle)
 //   if(haystack.includes(needle)) {
 //    return index
 //   } else {
@@ -25,10 +53,10 @@
 // var removeDuplicates = function(nums) {
 //   // Given an array in non-descending order, remove the duplicate elements in-place
 //   // Iterate over the nums array
-//     // If the element at index i is the same as the element at index i-1, then slice out the element at index i and decrement the value of i. 
-//   // Continue iterating. Increment i. Repeat. 
+//     // If the element at index i is the same as the element at index i-1, then slice out the element at index i and decrement the value of i.
+//   // Continue iterating. Increment i. Repeat.
 //   // Returns nums/length because that's what Leetcode wants.
-  
+
 //   for(let i = 0; i < nums.length; i++){
 //     console.log('I: ', i)
 //     if(nums[i]===nums[i+1]){
@@ -37,19 +65,19 @@
 //     }
 //     // console.log('Nums: ', nums)
 //   }
-  
+
 //   return nums.length
 // };
 
 // Runtime
 // 768 ms
 
-// // Remove Elements Problem: 
+// // Remove Elements Problem:
 
 // var removeElement = function(nums, val) {
 //   // Given an array and a number, search the array for the number and remove any instances of that number.
-//   // Search 
-//   // Remove 
+//   // Search
+//   // Remove
 //   // Decrement i
 //   // return nums.length so the test can check to see if I did it correctly
 //   for (let i = 0; i < nums.length; i++) {
