@@ -1,8 +1,32 @@
 // Length of Last Word
 
+// Example 1:
+
+// Input: s = "Hello World"
+// Output: 5
+// Explanation: The last word is "World" with length 5.
+// Example 2:
+
+// Input: s = "   fly me   to   the moon  "
+// Output: 4
+// Explanation: The last word is "moon" with length 4.
+
 var lengthOfLastWord = function(s) {
+    // Given an input of a string of words with spaces (or at least one word),
+    // split the string by spaces, assign to an array
+    // find the length of the last element in the array
+    // return that value
     
+    // if the string length contains more than one word
+    let arrayed = s.split(' ')
+    let lastElement = arrayed[arrayed.length - 1]
+    console.log('Length of last Element: ', lastElement.length)
+    console.log('S: ', s)
 };
+
+// lengthOfLastWord('Hello World')
+lengthOfLastWord('Dog')
+// Expected output 
 
 
 
