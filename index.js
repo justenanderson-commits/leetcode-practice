@@ -25,7 +25,20 @@
 // };
 
 var plusOne = function(digits) {
-    
+    console.log('Digits: ' , digits)
+    // Given an array of numbers as an array, join them together as an integer
+    let num = digits.join('')
+    // // Increment + 1 
+    // console.log('Num: ', num)
+    num ++
+    // console.log('New num: ', num)
+    let result = num.toString()
+    let answer = result.split('')
+    // console.log('Result: ', result)
+    // console.log('Answer: ', answer)
+    return answer
+    // Split the new number back into an array
+    // Return the array with the newly incremented number
 };
 
 // var plusOne = function(digits) {
