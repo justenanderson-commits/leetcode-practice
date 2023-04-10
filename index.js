@@ -24,24 +24,24 @@
     
 // };
 
-var plusOne = function(digits) {
-    // console.log('Digits: ' , digits)
-    // // Given an array of numbers as an array, join them together as an integer
-    // let num = digits.join('')
-    // // // Increment + 1 
-    // // console.log('Num: ', num)
-    // num ++
-    // // console.log('New num: ', num)
-    // let result = num.toString()
-    // let answer = result.split('')
-    // console.log('Result: ', result)
-    // console.log('Answer: ', answer)
-    let num = BigInt(digits.join('')) + BigInt(1)
-    let answer = BigInt(num).toString().split('')
-    return answer
+// var plusOne = function(digits) {
+//     // console.log('Digits: ' , digits)
+//     // // Given an array of numbers as an array, join them together as an integer
+//     // let num = digits.join('')
+//     // // // Increment + 1 
+//     // // console.log('Num: ', num)
+//     // num ++
+//     // // console.log('New num: ', num)
+//     // let result = num.toString()
+//     // let answer = result.split('')
+//     // console.log('Result: ', result)
+//     // console.log('Answer: ', answer)
+//     let num = BigInt(digits.join('')) + BigInt(1)
+//     let answer = BigInt(num).toString().split('')
+//     return answer
     // Split the new number back into an array
     // Return the array with the newly incremented number
-};
+// };
 
 // var plusOne = function(digits) {
 //     return (BigInt(digits.join("")) + BigInt(1)).toString().split("");
@@ -63,15 +63,20 @@ var plusOne = function(digits) {
 
 var lengthOfLastWord = function(s) {
     // Given an input of a string of words with spaces (or at least one word),
+    // if the string length contains more than one word
     // split the string by spaces, assign to an array
+    // s.split(' ')
+    
     // find the length of the last element in the array
     // return that value
-    
-    // if the string length contains more than one word
     let arrayed = s.split(' ')
-    let lastElement = arrayed[arrayed.length - 1]
-    console.log('Length of last Element: ', lastElement)
-    console.log('S: ', s)
+    console.log('Arrayed: ', arrayed)
+    // Need to filter out the empty strings using .filter
+    let filtered = arrayed.filter(string => string != '')
+    // console.log('filtered: ', filtered)
+    let lastElement = filtered[filtered.length - 1]
+    // console.log('Length of last Element: ', lastElement)
+    // console.log('S: ', s)
     return lastElement.length
 };
 
