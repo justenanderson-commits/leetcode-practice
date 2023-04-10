@@ -61,28 +61,36 @@
 // Output: 4
 // Explanation: The last word is "moon" with length 4.
 
-var lengthOfLastWord = function(s) {
-    // Given an input of a string of words with spaces (or at least one word),
-    // if the string length contains more than one word
-    // split the string by spaces, assign to an array
-    // s.split(' ')
+// var lengthOfLastWord = function(s) {
+//     // Given an input of a string of words with spaces (or at least one word),
+//     // if the string length contains more than one word
+//     // split the string by spaces, assign to an array
+//     // s.split(' ')
     
-    // find the length of the last element in the array
-    // return that value
-    let arrayed = s.split(' ')
-    console.log('Arrayed: ', arrayed)
-    // Need to filter out the empty strings using .filter
-    let filtered = arrayed.filter(string => string != '')
-    // console.log('filtered: ', filtered)
-    let lastElement = filtered[filtered.length - 1]
-    // console.log('Length of last Element: ', lastElement)
-    // console.log('S: ', s)
-    return lastElement.length
+//     // find the length of the last element in the array
+//     // return that value
+//     let arrayed = s.split(' ')
+//     // console.log('Arrayed: ', arrayed)
+//     // Need to filter out the empty strings using .filter
+//     let filtered = arrayed.filter(string => string != '')
+//     // console.log('filtered: ', filtered)
+//     let lastElement = filtered[filtered.length - 1]
+//     // console.log('Length of last Element: ', lastElement)
+//     // console.log('S: ', s)
+//     return lastElement.length
+// };
+
+// // lengthOfLastWord('Hello World')
+// lengthOfLastWord('Dog')
+// // Expected output 
+
+// ALTERNATE SOLUTION - slightly slower run time
+var lengthOfLastWord = function(s) {
+    let filtered = s.split(' ').filter(string => string != '')
+    return filtered[filtered.length - 1].length 
 };
 
-// lengthOfLastWord('Hello World')
-lengthOfLastWord('Dog')
-// Expected output 
+
 
 
 
