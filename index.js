@@ -1,3 +1,13 @@
+// Add Binary
+
+var addBinary = (a, b) => {
+    console.log('A: ', a)
+    console.log('B: ', b)
+}
+
+console.log('Solution: ', addBinary(1, 11))
+
+
 // Plus One
 // Example 1:
 
@@ -84,11 +94,11 @@
 // lengthOfLastWord('Dog')
 // // Expected output 
 
-// ALTERNATE SOLUTION - slightly slower run time
-var lengthOfLastWord = function(s) {
-    let filtered = s.split(' ').filter(string => string != '')
-    return filtered[filtered.length - 1].length 
-};
+// // ALTERNATE SOLUTION - slightly slower run time
+// var lengthOfLastWord = function(s) {
+//     let filtered = s.split(' ').filter(string => string != '')
+//     return filtered[filtered.length - 1].length 
+// };
 
 
 
