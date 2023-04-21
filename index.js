@@ -1,12 +1,47 @@
 // Add Binary
+// If the final index position of each string is 0, then so too will our returned string
+// If one is a zero and the other a 1, the final index of our result will be a 1.
+// If both are 1s, the returned result will be a zero and we carry the one to the next decremented index position.
 
 var addBinary = (a, b) => {
+    let result = ''
     console.log('A: ', a)
     console.log('B: ', b)
+    
+    if (a[a.length-1] && b[b.length-1] === '0') {
+        result.concat('', '0')
+        console.log('13 Result: ', result)
+    }
+    if (a[a.length-1] && b[b.length-1] === '1') {
+        result.concat('', '0')
+        // Need to carry over the one
+        console.log('Result 18: ', result)
+        
+    }
+    // if (a[a.length-1] && b[b.length-1] === '0') {
+    //     c = '0'
+    //     console.log('C: ', c)
+    // }
+    return result
 }
 
-console.log('Solution: ', addBinary(1, 11))
+const nombre = 'john'
+const apellido = 'smith'
+const combined = nombre.concat(' ', apellido)
+console.log('Combined: ', combined)
+nombre.concat(apellido)
+console.log('nombre: ', nombre)
 
+const str1 = 'Hello';
+const str2 = 'World';
+
+console.log(str1.concat(' ', str2));
+// Expected output: "Hello World"
+
+console.log(str2.concat(', ', str1));
+
+console.log('Solution: ', addBinary('0', '10'))
+console.log('Solution: ', addBinary('1', '11'))
 
 // Plus One
 // Example 1:
