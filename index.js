@@ -7,15 +7,33 @@ var addBinary = (a, b) => {
     let result = ''
     console.log('A: ', a)
     console.log('B: ', b)
+
+    for (let i = a.length; i > 0 ; i--) {
+        if (a[i] && b[i] === '0') {
+            console.log('i = ', '0')
+        } 
+        if (a[i] && b[i] === '1') {
+            console.log('i = ', '0')
+        } 
+        if (a[i] === '0' && b[i] === '1') {
+            console.log('i = ', '1')
+        }
+        if (a[i] === '1' && b[i] === 'b') {
+            console.log('i = ', '1')
+        }
+    }
     
     if (a[a.length-1] && b[b.length-1] === '0') {
-        result.concat('', '0')
+        let finalIndex = '0'
+        // console.log('Final Index: ', finalIndex)
+        result.concat('', finalIndex)
         console.log('13 Result: ', result)
     }
     if (a[a.length-1] && b[b.length-1] === '1') {
+        let finalIndex = '1'
         result.concat('', '0')
         // Need to carry over the one
-        console.log('Result 18: ', result)
+        // console.log('Result 18: ', result)
         
     }
     // if (a[a.length-1] && b[b.length-1] === '0') {
@@ -25,23 +43,8 @@ var addBinary = (a, b) => {
     return result
 }
 
-const nombre = 'john'
-const apellido = 'smith'
-const combined = nombre.concat(' ', apellido)
-console.log('Combined: ', combined)
-nombre.concat(apellido)
-console.log('nombre: ', nombre)
-
-const str1 = 'Hello';
-const str2 = 'World';
-
-console.log(str1.concat(' ', str2));
-// Expected output: "Hello World"
-
-console.log(str2.concat(', ', str1));
-
-console.log('Solution: ', addBinary('0', '10'))
-console.log('Solution: ', addBinary('1', '11'))
+console.log(addBinary('10', '110'))
+// console.log(addBinary('11', '111'))
 
 // Plus One
 // Example 1:
