@@ -1,3 +1,19 @@
+// Add Binary
+// If the final index position of each string is 0, then so too will our returned string
+// If one is a zero and the other a 1, the final index of our result will be a 1.
+// If both are 1s, the returned result will be a zero and we carry the one to the next decremented index position.
+
+var addBinary = (a, b) => {
+    const binaryA = `0b${a}`
+    const binaryB = `0b${b}`
+    const sum = BigInt(binaryA) + BigInt(binaryB)
+    const result = sum.toString(2)
+    return result
+}
+
+console.log(addBinary('10', '110'))
+// console.log(addBinary('11', '111'))
+
 // Plus One
 // Example 1:
 
@@ -84,11 +100,11 @@
 // lengthOfLastWord('Dog')
 // // Expected output 
 
-// ALTERNATE SOLUTION - slightly slower run time
-var lengthOfLastWord = function(s) {
-    let filtered = s.split(' ').filter(string => string != '')
-    return filtered[filtered.length - 1].length 
-};
+// // ALTERNATE SOLUTION - slightly slower run time
+// var lengthOfLastWord = function(s) {
+//     let filtered = s.split(' ').filter(string => string != '')
+//     return filtered[filtered.length - 1].length 
+// };
 
 
 
