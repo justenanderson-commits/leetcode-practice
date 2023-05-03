@@ -1,9 +1,18 @@
 // Square Root of X
 var mySqrt = function(x) {
-    
+    // Start counting up from zero
+    for (i = 0; i <= x; i++) {
+        if (i * i >= x) {
+            console.log('I: ', i)
+            return i 
+        }
+    }
+    // If value times itself exceeds the value of x, return that value minus 1
 };
 
-
+console.log(mySqrt(4))
+console.log(mySqrt(9))
+console.log(mySqrt(144))
 
 
 
