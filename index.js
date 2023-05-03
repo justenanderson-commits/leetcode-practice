@@ -4,42 +4,16 @@
 // If both are 1s, the returned result will be a zero and we carry the one to the next decremented index position.
 
 var addBinary = (a, b) => {
-    let result = ''
     console.log('A: ', a)
     console.log('B: ', b)
-
-    for (let i = a.length; i > 0 ; i--) {
-        if (a[i] && b[i] === '0') {
-            console.log('i = ', '0')
-        } 
-        if (a[i] && b[i] === '1') {
-            console.log('i = ', '0')
-        } 
-        if (a[i] === '0' && b[i] === '1') {
-            console.log('i = ', '1')
-        }
-        if (a[i] === '1' && b[i] === 'b') {
-            console.log('i = ', '1')
-        }
-    }
     
-    if (a[a.length-1] && b[b.length-1] === '0') {
-        let finalIndex = '0'
-        // console.log('Final Index: ', finalIndex)
-        result.concat('', finalIndex)
-        console.log('13 Result: ', result)
-    }
-    if (a[a.length-1] && b[b.length-1] === '1') {
-        let finalIndex = '1'
-        result.concat('', '0')
-        // Need to carry over the one
-        // console.log('Result 18: ', result)
-        
-    }
-    // if (a[a.length-1] && b[b.length-1] === '0') {
-    //     c = '0'
-    //     console.log('C: ', c)
-    // }
+    const binaryA = `0b${a}`
+    const binaryB = `0b${b}`
+    const sum = BigInt(binaryA) + BigInt(binaryB)
+    console.log('Sum1: ', sum)
+    const result = sum.toString(2)
+    console.log('Result: ', result)
+    
     return result
 }
 
