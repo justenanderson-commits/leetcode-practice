@@ -4,16 +4,10 @@
 // If both are 1s, the returned result will be a zero and we carry the one to the next decremented index position.
 
 var addBinary = (a, b) => {
-    console.log('A: ', a)
-    console.log('B: ', b)
-    
     const binaryA = `0b${a}`
     const binaryB = `0b${b}`
     const sum = BigInt(binaryA) + BigInt(binaryB)
-    console.log('Sum1: ', sum)
     const result = sum.toString(2)
-    console.log('Result: ', result)
-    
     return result
 }
 
